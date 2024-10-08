@@ -28,9 +28,9 @@ if(age>=18 && citizenshipStatus && daysInCountry >= 30){
 console.log("----------------")
 console.log("Trecia uzduotis")
 
-var age = 39;
-var bmi = 29;
-var smokes = false;
+var age = 51;
+var bmi = 31;
+var smokes = true;
 
 console.log("metai: ",age, "bmi", bmi, "ruko", smokes);
 
@@ -46,7 +46,7 @@ else if (age>50&&bmi>=30&&smokes==true) {
     console.log("tavo rizika LABAI didele");
 }
 
-else if (age>50||bmi>=30||smokes==true) {
+else if (age>50||bmi>=30||smokes==true && !(age>50&&bmi>=30&&smokes==true)) {
     console.log("tavo rizika didele");
 }
 
